@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <style>
+	html, body {
+		font-family: "Outfit", sans-serif;
+		background-color: hsl(217, 54%, 11%);		
+	}
+	
+	main {
+		border: 1px hidden;
+		border-radius: 10px;
+		background-color: hsl(216, 50%, 16%);
+		display: block;
+		margin: auto;
+		width: 275px;
+		margin-top: 100px;
+	}
+	
+	h4 {
+		font-weight: 600;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	a {
+		text-decoration: none;
+		color: hsl(0, 0%, 100%);
+	}
+	
+	a:hover {
+		color: hsl(178, 100%, 50%);
+	}
+	
+	p {
+		color: hsl(215, 51%, 70%);
+		font-weight: 400;
+		font-size: 14px;
+	}
+	
+	#tagline {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	img {
+		align-self: center;
+	}
+	
+	#buyinfo {
+		display: flex;
+		justify-content: center;
+		
+	}
+	
+	#eth_info, #time_info {
+		display: flex;
+		justify-content: center;
+		
+	}
+	
+	#eth_info {
+		padding-right: 50px;
+		margin-right: 15px
+	}
+	
+	#time_info {
+		padding-right: 13px;
+	}
+	
+	#nft {
+		width: 235px;
+		height: 235px;
+		border-radius: 10px;
+		margin-top: 20px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	
+	#logo_eth {
+		margin: 5px;
+	}
+	
+	#price {
+		color: hsl(178, 100%, 50%);
+		font-size: 13px;
+		font-weight: 600;
+	}
+	
+	#countdown_clock {
+		margin: 5px;
+	}
+	
+	#time_left {
+		font-size: 13px;
+		font-weight: 400;
+		
+	}
+	
+	#avatar {
+		border: 1px solid white;
+		border-radius: 150px;
+		margin-left: 5px;
+		
+	}
+	
+	#credit {
+		border-top-style: solid;
+		border-top-color: hsl(215, 32%, 27%);
+		border-width: 1px;
+		margin: 20px;
+		padding: 5px;
+		display: flex;
+	}
+	
+	#name {
+		font-size: 12px;
+		padding-left: 15px;
+	}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+	<main>
+			
+		<a href="#nftcube"><img src="images/image-equilibrium.jpg" alt="An NFT of a balancing cube." length="235px" width="235px" id="nft"></a>
+			
+		<h4><a href="#equilibrium">Equilibrium #3429</a></h4>
+
+		<p id="tagline">Our Equilibrium collection promotes balance and calm.</p>
+		
+		<div id="buyinfo">
+			<div id= "eth_info">
+				<img src="images/icon-ethereum.svg" alt="Etherium sign" id="logo_eth">
+				<p id="price">0.041 ETH</p>
+			</div>
+			<div id="time_info">
+				<img src="images/icon-clock.svg" alt="Clock" id="countdown_clock">
+				<p id="time_left">3 days left</p>
+			</div>
+		</div>
+		
+	<div id="credit">
+		<img src="images/image-avatar.png" alt="Avatar of Jules Wyvern" length="25px" width="25px" id="avatar">
+		<p id="name">Creation of <a href="#juleswyvern">Jules Wyvern</a></p>
+	</div>
+	</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Spencer Quintana</a>.
+  </div>
+</body>
+</html>
